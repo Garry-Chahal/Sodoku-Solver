@@ -125,11 +125,9 @@ input.on('line', function(line)
 	else
 	{
 		line.trim().split(',')
-		console.log(line[4])
 		var x = parseInt(line[0]);
 		var y = parseInt(line[2]);
 		var value = parseInt(line[4]);
-		console.log(value)
 		if ((x > 0 && x < 10) && (y > 0 && y < 10))
 		{
 			emptyBoard[x][y] = value;
